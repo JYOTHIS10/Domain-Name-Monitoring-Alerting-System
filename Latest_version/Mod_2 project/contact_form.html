@@ -1,0 +1,71 @@
+<!-- contact form -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact Us </title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/cc7daabed4.js"></script>   <!-- font awesome icons -->
+	<link rel="stylesheet" type="text/css" href="contact_form.css">
+	<script type="text/javascript" src="contact_form.js"></script>
+</head>
+<body>
+
+	<div class="back"> <a href="index.html">
+			<div class="img"> 
+				<i class="fas fa-arrow-left"></i> 
+			</div> 
+	</div> </a>
+
+	<div class="contact-us">
+		<div class="title">
+			<h1> Contact us </h1>
+		</div>
+
+
+		<form method="POST" action="#" id = contactform>    <!-- insert values and retrieve from db -->
+		<div class="form">
+			<div class="form-items">
+				<input type="text" id = 'name' class="input" placeholder="Name" required onchange="isAlphabet(document.getElementById('name'), 'Name should include only letters')">
+				<i class="fas fa-user"></i>
+			</div>
+
+			<div class="form-items">
+				<input type="email" id = 'email' class="input" placeholder="Email" required onchange="emailValidator(document.getElementById('email'),'Not a valid email')">
+				<i class="fas fa-envelope"></i>
+			</div>
+
+			<div class="form-items">
+				<textarea class="input message" cols="30" rows="10" placeholder="Drop us a message..."></textarea>
+			</div>
+		</div>
+		
+
+		<button class="btn">
+			Submit
+			<i class="fas fa-arrow-right"></i>
+		</button>
+
+		<div class="social-icons">
+			<div class="facebook">
+				<i class="fab fa-facebook-f"></i>
+			</div>
+
+			<div class="google">
+				<i class="fab fa-google-plus-g"></i>
+			</div>
+
+			<div class="twitter">
+				<i class="fab fa-twitter"></i>
+			</div>
+		</div>
+		</form>
+
+
+	</div> <!--  final div tag -->
+
+
+
+</body>
+</html>

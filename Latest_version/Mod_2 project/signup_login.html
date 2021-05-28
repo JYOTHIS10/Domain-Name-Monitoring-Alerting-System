@@ -1,0 +1,74 @@
+<!-- sign up and login page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SignUp or Login </title>
+	<link rel="stylesheet" type="text/css" href="signup_login.css">
+	<script src="https://kit.fontawesome.com/cc7daabed4.js"></script>
+</head>
+<body>
+
+	<div class="container" id ='container'>
+
+		<div class="form-container sign-up-container">
+			<form action="">   <!-- form starts here -->
+				<h1> Create an account </h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f" id = 'facebook'></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g" id = 'google'></i></a>
+					<a href="#" class="social"><i class="fab fa-twitter" id = 'twitter'></i></a>
+				</div>
+				<span> or use your email for registration </span>
+				<input type="text" id = 'name' name="name" placeholder="Name" onchange="isAlphabet(document.getElementById('name'), 'Name should include only letters')">
+				<input type="email" id = 'email' name="name" placeholder="Email" onchange="emailValidator(document.getElementById('email'),'Not a valid email')">
+				<input type="password" name="password" placeholder="Password">
+				<br>
+				<button class="signup_btn"> <a href = '#' style="color: white;"> SignUp </a></button>  <!-- use this is js code once a user enters the details. -->
+			</form>  <!--  form ends here -->
+		</div>  <!-- end of form-container sign-up-container -->
+
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1> Sign In </h1>
+				<div class="social-container">
+					<a href="#" class="social"> <i class="fab fa-facebook-f" id="facebook"></i>
+					<a href="#" class="social"> <i class="fab fa-google-plus-g" id="google"></i>
+					<a href="#" class="social"> <i class="fab fa-twitter" id = 'twitter'></i>
+				</div>
+				<span> or use your account </span>
+				<input type="email" id = 'email' name="email" placeholder="Email" onchange="emailValidator(document.getElementById('email'),'Not a valid email')">
+				<input type="password" name="password" placeholder="Password">
+				<a href="#"> Forgot your password? </a>
+				<button class="signin_btn"> <a href = '#' style="color: white;"> Sign In </a></button> <!-- use this in js code once a user enters the details. -->
+			</form>
+		</div> <!-- end of form-container sign-up-container -->
+
+		<div class="overlay-container">
+			<div class="overlay"> 
+				<div class="overlay-panel overlay-left"> 
+					<h1> Welcome back! </h1>
+					<p> Login with your personal/social media account if you wish to stay connected with us! </p>
+					<button class="ghost" id="signIn"> Sign In </button>
+				</div> 
+
+				<div class="overlay-panel overlay-right"> 
+					<h1> Namaste! </h1>
+					<p> Enter your details and begin your evergreen journey with us! </p>
+					<button class="ghost" id="signUp"> Sign Up </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="back"> <a href="index.html">
+			<div class="img"> 
+				<i class="fas fa-arrow-left"></i> 
+			</div> 
+	</div> </a>
+
+<script type="text/javascript" src="signup_login.js"></script>   <!-- js external file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>

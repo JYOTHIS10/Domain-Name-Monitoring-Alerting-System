@@ -1,0 +1,160 @@
+/*contact form */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+/*online fonts are above*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: #FFDAB9;
+
+}
+
+.back {
+	position: relative;
+	bottom: -25px;
+	left: 50%;
+	transform: translate(-15%, -1000%); /*horizontal position of return btn*/
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;   /*makes this div overlay the following two divs for back-arrow*/
+
+}
+
+.back div {
+	width: 50px;
+	height: 50px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	cursor: pointer;
+	margin-top: 50px;    /*changing the vertical position of back arrow*/
+}
+
+
+.back .fas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+/*------*/
+
+.contact-us {
+	width: 250px;
+	background-color: #fff;
+	padding: 50px;
+	margin: 100px auto;
+	border-radius: 30px;
+	position: relative;
+
+}
+
+.title h1{
+	clear: #535274;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.form, .form-items {
+	width: 100%;
+
+}
+
+.form-items .input {
+	width: 100%;
+	margin-bottom: 12px;
+	padding: 15px 40px;
+	box-sizing: border-box;
+	background: #ebeef1;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+
+.form-items .input.message {
+	height: 125px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+	padding: 15px;
+	resize: none;
+}
+
+.btn {
+	background: #c62828;
+	text-align: center;
+	color: #fff;
+	padding: 12px;
+	border-radius: 25px;
+	cursor: pointer;
+	width: 255px;
+	font-size: 15px;
+
+}
+
+.btn .fas {
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.form-items {
+	position: relative;  /*so that we can control the icons*/
+}
+
+.form-items .fas {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #9a99aa;
+}
+
+/*social icons*/
+
+.social-icons {
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translate(-50%); 
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-icons div {
+	width: 50px;
+	height: 50px;
+	background: red;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+.social-icons div .fab {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+
+}
+
+.social-icons div.facebook {
+	background: #5178d9;
+}
+
+.social-icons div.google {
+	background: #fb4f4f;
+}
+
+.social-icons div.twitter {
+	background: #41caf6;
+}
